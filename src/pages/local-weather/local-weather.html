@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'Medics' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="common-bg">
+  <ion-card>
+    <ion-list-header ion-text color="primary">
+      {{ 'Medics' | translate }}
+    </ion-list-header>
+    <ion-list>
+      <button ion-item *ngFor="let medic of medics">
+        <ion-avatar item-left>
+          <img [src]="medic.img_url" alt="">
+        </ion-avatar>
+        <h2>{{medic.name}} </h2>
+        <h3>{{medic.phone}} </h3>
+        <a>{{medic.website }}</a>
+      </button>
+    </ion-list>
+  </ion-card>
+</ion-content>

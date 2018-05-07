@@ -1,0 +1,32 @@
+<!-- -->
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>Home</strong>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn common-bg">
+  <ion-card *ngFor="let entry of entries">
+    <ion-card-header>
+      <ion-card-title text-wrap ion-text color="primary">
+        {{entry.title}}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="color:black">
+      {{ entry.text }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

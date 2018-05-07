@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ./platforms/browser/www
-rsync -avz --delete . "gabriel@residentesonline.com:htdocs/vazer"
+rsync -avz --delete . "gabriel@residentesonline.com:htdocs/vaser"
 echo "syncronized"
 cd ../../../

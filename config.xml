@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.seedgabo.vazer" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Vazer Academy App</name>
-    <description>Vazer</description>
-    <author email="firminoata@gmail.com" href="https://ionictheme.com">Vazer Cademy</author>
+<widget id="com.seedgabo.vaser" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Vaser Academy App</name>
+    <description>Vaser</description>
+    <author email="firminoata@gmail.com" href="https://ionictheme.com">Vaser Academy</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

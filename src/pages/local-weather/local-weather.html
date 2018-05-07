@@ -9,8 +9,10 @@
 
 <ion-content padding class="common-bg">
   <ion-card>
-    <ion-list-header ion-text color="primary">
-      {{ 'Medics' | translate }}
+    <ion-list-header>
+      <span ion-text color="primary">
+        {{ 'Medics' | translate }}
+      </span>
     </ion-list-header>
     <ion-list>
       <button ion-item *ngFor="let medic of medics">

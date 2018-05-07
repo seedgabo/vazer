@@ -27,12 +27,6 @@ import { TripsPage } from "../pages/trips/trips";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import { CalendarPage } from "../pages/calendar/calendar";
 
-// import services
-// end import services
-// end import services
-
-// import pages
-// end import pages
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
@@ -66,10 +60,7 @@ export function createTranslateLoader(http: HttpClient) {
       scrollAssist: true,
       autoFocusAssist: false
     }),
-    IonicStorageModule.forRoot({
-      name: "__ionic3_start_theme",
-      driverOrder: ["indexeddb", "sqlite", "websql"]
-    })
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
